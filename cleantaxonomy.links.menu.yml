@@ -1,0 +1,14 @@
+cleantaxonomy.admin:
+  title: CleanTaxonomy
+  route_name: cleantaxonomy.admin
+  parent: system.admin_config
+  description: 'Display message settings'
+  position: left
+  weight: -35
+
+cleantaxonomy.menulink:
+  title: CleanTaxonomy Dashboard
+  description: 'Display table '
+  route_name: cleantaxonomy.cleantaxonomy_dashboard
+  parent: cleantaxonomy.admin
+  weight: -8

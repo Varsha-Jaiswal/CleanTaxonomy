@@ -1,0 +1,32 @@
+cleantaxonomy.taxonomylist:
+  path: '/admin/cleantaxonomy'
+  defaults:
+    _controller: '\Drupal\cleantaxonomy\Controller\TaxonomyList::TaxonomyTermsList'
+    _title: 'Clean Taxonomy'
+  requirements:
+    _permission: 'administer cleantaxonomy'
+
+cleantaxonomy.admin_cleantaxonomy.tid.replace:
+  path: '/admin/cleantaxonomy/{tid}/replace'
+  defaults:
+    _form: '\Drupal\cleantaxonomy\Form\CleanTaxonomyReplaceForm'
+    _title: 'Replace Taxonomy Term'
+    custom_arg: '{tid}'
+  requirements:
+    _permission: 'administer cleantaxonomy'
+
+cleantaxonomy.admin:
+  path: '/admin/config/cleantaxonomy'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'cleantaxonomy'
+  requirements:
+    _permission: 'access administration pages'
+
+cleantaxonomy.cleantaxonomy_dashboard:
+  path: '/admin/config/cleantaxonomy/settings'
+  defaults:
+    _title: 'cleantaxonomy'
+    _controller: '\Drupal\cleantaxonomy\Controller\TaxonomyList::TaxonomyTermsList'
+  requirements:
+    _permission: 'administer cleantaxonomy'

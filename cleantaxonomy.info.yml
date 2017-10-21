@@ -1,0 +1,6 @@
+name: Clean Taxonomy
+type: module
+description: 'Provides a ordered list of Taxonomy terms along with their vocabularies and number of nodes attached to them.'
+core: 8.x
+project: 'Cleantaxonomy'
+package: Administration
